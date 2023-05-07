@@ -3,34 +3,38 @@ package org.example.basicks;
 import org.testng.annotations.*;
 
 public class Annotations1 {
-
     @BeforeClass
-    public void beforeClass(){
-        System.out.println("Initialize Selenium");
+    public void beforeClass() {
+        System.out.println("Initialize Selenium for Class 1");
     }
 
     @BeforeMethod
-    public void beforeMethod(){
+    public void beforeMethod() {
         System.out.println("Opening Browser");
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         System.out.println("Inside Test 1");
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         System.out.println("Inside Test 2");
     }
 
     @AfterMethod
-    public void afterMethod(){
+    public void afterMethod() {
         System.out.println("Closing Browser");
     }
 
     @AfterClass
-    public void afterClass(){
-        System.out.println("Destroy Selenium");
+    public void afterClass() {
+        System.out.println("Destroy Selenium for Class 1");
+    }
+
+    @AfterSuite
+    public void afterSuite(){
+        System.out.println("Finishing TestNG");
     }
 }
