@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Basic Functional Test Suite">
+
+    <test verbose="10" name="Test Basic Annotations 1">
+        <classes>
+            <class name="org.example.testng.basics.Annotations1"/>
+            <class name="org.example.testng.basics.Annotation2"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test verbose="2" name="Test Basic Annotations 2">
+        <classes>
+            <class name="org.example.testng.basics.Annotations1"/>
+        </classes>
+    </test>
+    <test verbose="3" name="Log In Test">
+        <classes>
+            <class name="org.example.testng.logintests.LoginTest"></class>
+        </classes>
+    </test>
+    <test name="Sign Up Test" verbose="2">
+        <classes><class name="org.example.testng.logintests.SignUpTest"></class></classes>
+    </test>
+</suite> <!-- Suite -->
