@@ -1,4 +1,4 @@
-package org.example.basicks;
+package org.example.basics;
 
 import org.testng.annotations.*;
 
